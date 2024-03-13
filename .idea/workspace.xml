@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b58678d-f9cb-473d-bae8-4ac498e049d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cuestionario/Pregunta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    <list default="true" id="6b58678d-f9cb-473d-bae8-4ac498e049d0" name="Changes" comment="Subo primer clase del proyecto">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cuestionario/Cuestionario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Cuestionario/Respuesta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +19,19 @@
       <list>
         <option value="Class" />
       </list>
+    </option>
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="7b1854a8-652b-44f8-997e-1d475c2d8e2a" />
+        <option name="url" value="https://github.com/juannardi13/examen_registro.git" />
+      </UrlAndAccount>
     </option>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -63,6 +71,29 @@
       <option name="presentableId" value="Default" />
       <updated>1710353759528</updated>
     </task>
+    <task id="LOCAL-00001" summary="Subo primer clase del proyecto">
+      <created>1710355874779</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710355874779</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Subo primer clase del proyecto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Subo primer clase del proyecto" />
   </component>
 </project>
