@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cuestionario</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <h2>{{ pregunta }}</h2>
+        <form action="/responder" method="POST">
+            {{#each opciones}}
+                <input type="radio" id="opcion{{ @index }}" name="indice" value="{{ @index }}">
+                <label for="opcion{{ @index }}">{{ this }}</label><br>
+            {{/each}}
+            <input type="submit" value="Responder">
+        </form>
+    </body>
+</html>
