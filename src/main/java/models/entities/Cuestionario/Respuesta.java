@@ -1,4 +1,4 @@
-package Cuestionario;
+package models.entities.Cuestionario;
 
 public class Respuesta {
     private int indicePregunta;

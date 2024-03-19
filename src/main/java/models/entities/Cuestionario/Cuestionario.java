@@ -1,14 +1,37 @@
-package Cuestionario;
+package models.entities.Cuestionario;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Cuestionario {
     private List<Pregunta> preguntas;
     private List<Respuesta> respuestas;
+    private int preguntaActual;
+
+    public Cuestionario(List<Pregunta> preguntas) {
+        this.preguntas = preguntas;
+        this.respuestas = new ArrayList<>();
+    }
 
     public void agregarPregunta(Pregunta pregunta) {
         preguntas.add(pregunta);
+    }
+
+    public Pregunta obtenerPregunta(int indice) {
+        return preguntas.get(indice);
+    }
+
+    public int getPreguntaActual() {
+        return this.preguntaActual;
+    }
+
+    public void setPreguntaActual(int indice) {
+        this.preguntaActual = indice;
+    }
+
+    public void avanzarProximaPregunta() {
+        preguntaActual++;
     }
 
     public void responder(int indicePregunta, int indiceRespuesta) {

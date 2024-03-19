@@ -1,4 +1,4 @@
-package Cuestionario;
+package models.entities.Cuestionario;
 
 import java.util.List;
 
