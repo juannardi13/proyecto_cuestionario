@@ -4,26 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b58678d-f9cb-473d-bae8-4ac498e049d0" name="Changes" comment="Terminada la lógica de las clases">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/CuestionarioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/entities/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/repositories/RepositorioPreguntas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/Router.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/estilos/estilos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/jss/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pregunta.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/resultado.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6b58678d-f9cb-473d-bae8-4ac498e049d0" name="Changes" comment="Implemento Handlebars y Javalin para aportarle una vista gráfica al cuestionario, todavía tengo que mostrar el puntaje del cuestionario y poner las preguntas verídicas.">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/images/ABBA.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cuestionario/Cuestionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/entities/Cuestionario/Cuestionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cuestionario/Pregunta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/entities/Cuestionario/Pregunta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cuestionario/Respuesta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/entities/Cuestionario/Respuesta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/CuestionarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/CuestionarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/entities/Cuestionario/Cuestionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/entities/Cuestionario/Cuestionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/entities/Cuestionario/Pregunta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/entities/Cuestionario/Pregunta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/entities/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/repositories/RepositorioPreguntas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/repositories/RepositorioPreguntas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Router.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Router.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pregunta.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pregunta.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/resultado.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/resultado.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,10 +60,25 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Users\Juancho\Downloads\ÚLTIMA BALA - DISEÑO DE SISTEMAS\untitled\src\main\resources\public" />
+      <recent name="E:\Users\Juancho\Downloads\ÚLTIMA BALA - DISEÑO DE SISTEMAS\untitled\src\main\resources\images" />
       <recent name="E:\Users\Juancho\Downloads\ÚLTIMA BALA - DISEÑO DE SISTEMAS\untitled\src\main\java\models" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server.App" />
+      <module name="examen_registro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="untitled" />
       <method v="2">
@@ -86,6 +92,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -117,7 +128,21 @@
       <option name="project" value="LOCAL" />
       <updated>1710372382845</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Cambio lógica en algunas clases para que puedan ser usadas de forma más facil por javalin y posteriormente handlebars">
+      <created>1710882534337</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710882534337</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implemento Handlebars y Javalin para aportarle una vista gráfica al cuestionario, todavía tengo que mostrar el puntaje del cuestionario y poner las preguntas verídicas.">
+      <created>1710882592688</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710882592688</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +159,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Subo primer clase del proyecto" />
     <MESSAGE value="Terminada la lógica de las clases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Terminada la lógica de las clases" />
+    <MESSAGE value="Cambio lógica en algunas clases para que puedan ser usadas de forma más facil por javalin y posteriormente handlebars" />
+    <MESSAGE value="Implemento Handlebars y Javalin para aportarle una vista gráfica al cuestionario, todavía tengo que mostrar el puntaje del cuestionario y poner las preguntas verídicas." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemento Handlebars y Javalin para aportarle una vista gráfica al cuestionario, todavía tengo que mostrar el puntaje del cuestionario y poner las preguntas verídicas." />
   </component>
 </project>

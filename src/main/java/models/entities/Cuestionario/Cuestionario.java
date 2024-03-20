@@ -51,4 +51,20 @@ public class Cuestionario {
 
         return (respuestasCorrectas * 100) / preguntas.size();
     }
+
+    public Boolean estaAprobado() {
+        return this.calcularPorcentaje() > 80;
+    }
+
+    public Boolean estaCompleto() {
+        return preguntaActual == preguntas.size();
+    }
+
+    public Boolean esUltimaPregunta() {
+        return preguntaActual == preguntas.size() - 1;
+    }
+
+    public int cantidadPreguntas() {
+        return preguntas.size();
+    }
 }

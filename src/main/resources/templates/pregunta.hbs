@@ -7,12 +7,26 @@
 
     <body>
         <h2>{{ pregunta }}</h2>
+
+        {{#if tieneFoto}}
+            <br>
+            <img src="{{foto}}" width="300">
+        {{/if}}
+        <br>
+        <h3>{{preguntaActual}} / {{cantidadPreguntas}}</h3>
         <form action="/responder" method="POST">
             {{#each opciones}}
                 <input type="radio" id="opcion{{ @index }}" name="indice" value="{{ @index }}">
                 <label for="opcion{{ @index }}">{{ this }}</label><br>
             {{/each}}
-            <input type="submit" value="Responder">
+
+            {{#if completo}}
+                <input type="submit" value="Responder y terminar">
+            {{else}}
+                <input type="submit" value="Responder">
+            {{/if}}
+
         </form>
+
     </body>
 </html>

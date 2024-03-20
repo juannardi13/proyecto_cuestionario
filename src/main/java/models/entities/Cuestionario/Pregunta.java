@@ -35,4 +35,8 @@ public class Pregunta {
         return respuestaCorrecta;
     }
 
+    public Boolean tieneFoto() {
+        return foto != null;
+    }
+
 }

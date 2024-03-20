@@ -34,6 +34,10 @@ public class CuestionarioController {
         Map<String, Object> model = new HashMap<>();
         model.put("pregunta", primeraPregunta.getPregunta());
         model.put("opciones", primeraPregunta.getOpciones());
+        model.put("tieneFoto", primeraPregunta.tieneFoto());
+        model.put("foto", primeraPregunta.getFoto());
+        model.put("preguntaActual", cuestionario.getPreguntaActual() + 1);
+        model.put("cantidadPreguntas", cuestionario.cantidadPreguntas());
         ctx.render("/pregunta.hbs", model);
 
     }
@@ -48,12 +52,28 @@ public class CuestionarioController {
         cuestionario.avanzarProximaPregunta();
 
         // Obtener la siguiente pregunta del cuestionario
-        Pregunta siguientePregunta = cuestionario.obtenerPregunta(cuestionario.getPreguntaActual());
+        if(!cuestionario.estaCompleto()) {
+            Pregunta siguientePregunta = cuestionario.obtenerPregunta(cuestionario.getPreguntaActual());
 
-        // Renderizar la vista Handlebars con los datos de la siguiente pregunta
-        Map<String, Object> model = new HashMap<>();
-        model.put("pregunta", siguientePregunta.getPregunta());
-        model.put("opciones", siguientePregunta.getOpciones());
-        ctx.render("/pregunta.hbs", model);
+            // Renderizar la vista Handlebars con los datos de la siguiente pregunta
+            Map<String, Object> model = new HashMap<>();
+            model.put("pregunta", siguientePregunta.getPregunta());
+            model.put("opciones", siguientePregunta.getOpciones());
+            model.put("tieneFoto", siguientePregunta.tieneFoto());
+            model.put("foto", siguientePregunta.getFoto());
+            model.put("completo", cuestionario.esUltimaPregunta());
+            model.put("preguntaActual", cuestionario.getPreguntaActual() + 1);
+            model.put("cantidadPreguntas", cuestionario.cantidadPreguntas());
+            ctx.render("/pregunta.hbs", model);
+        } else {
+            ctx.sessionAttribute("cuestionario", null);
+
+            Map<String, Object> model = new HashMap<>();
+            model.put("porcentaje", cuestionario.calcularPorcentaje());
+            model.put("aprobado", cuestionario.estaAprobado());
+            ctx.render("/resultado.hbs", model);
+        }
+
     }
+
 }
