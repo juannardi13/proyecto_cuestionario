@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b58678d-f9cb-473d-bae8-4ac498e049d0" name="Changes" comment="Agrego algunas preguntas.">
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/repositories/RepositorioPreguntas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/repositories/RepositorioPreguntas.java" afterDir="false" />
+    <list default="true" id="6b58678d-f9cb-473d-bae8-4ac498e049d0" name="Changes" comment="Agrego las fotos de las preguntas que tienen. Falta: agregar Javascript, marcar las opciones correctas de las preguntas y hacer que se seleccionen al azar">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/CuestionarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/CuestionarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/jss/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/jss/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pregunta.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pregunta.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/resultado.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/resultado.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +56,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Users\Juancho\Downloads\ÚLTIMA BALA - DISEÑO DE SISTEMAS\untitled\src\main\resources\public\images" />
       <recent name="E:\Users\Juancho\Downloads\ÚLTIMA BALA - DISEÑO DE SISTEMAS\untitled\src\main\resources\public" />
       <recent name="E:\Users\Juancho\Downloads\ÚLTIMA BALA - DISEÑO DE SISTEMAS\untitled\src\main\resources\images" />
       <recent name="E:\Users\Juancho\Downloads\ÚLTIMA BALA - DISEÑO DE SISTEMAS\untitled\src\main\java\models" />
@@ -147,7 +153,28 @@
       <option name="project" value="LOCAL" />
       <updated>1711049557952</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Agrego todas las preguntas, falta Javascript seleccionar preguntas al azar">
+      <created>1711423959287</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711423959287</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Agrego todas las preguntas, falta Javascript seleccionar preguntas al azar">
+      <created>1711424051191</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711424051191</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Agrego las fotos de las preguntas que tienen. Falta: agregar Javascript, marcar las opciones correctas de las preguntas y hacer que se seleccionen al azar">
+      <created>1711424256696</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1711424256696</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +195,8 @@
     <MESSAGE value="Implemento Handlebars y Javalin para aportarle una vista gráfica al cuestionario, todavía tengo que mostrar el puntaje del cuestionario y poner las preguntas verídicas." />
     <MESSAGE value="Ya está casi todo. Falta agregar las preguntas de verdad y usar javascript." />
     <MESSAGE value="Agrego algunas preguntas." />
-    <option name="LAST_COMMIT_MESSAGE" value="Agrego algunas preguntas." />
+    <MESSAGE value="Agrego todas las preguntas, falta Javascript seleccionar preguntas al azar" />
+    <MESSAGE value="Agrego las fotos de las preguntas que tienen. Falta: agregar Javascript, marcar las opciones correctas de las preguntas y hacer que se seleccionen al azar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agrego las fotos de las preguntas que tienen. Falta: agregar Javascript, marcar las opciones correctas de las preguntas y hacer que se seleccionen al azar" />
   </component>
 </project>

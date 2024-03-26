@@ -5,10 +5,7 @@ import models.entities.Cuestionario.Cuestionario;
 import models.entities.Cuestionario.Pregunta;
 import models.repositories.RepositorioPreguntas;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class CuestionarioController {
 
@@ -21,9 +18,11 @@ public class CuestionarioController {
         Cuestionario cuestionario = ctx.sessionAttribute("cuestionario");
 
         if (cuestionario == null) {
-            // Si no hay cuestionario en la sesión, crea uno nuevo
-            cuestionario = new Cuestionario(preguntas);
-            // Guarda el cuestionario en la sesión
+
+            Collections.shuffle(preguntas);
+            List<Pregunta> seleccionadas = preguntas.subList(0, 40);
+
+            cuestionario = new Cuestionario(seleccionadas);
             ctx.sessionAttribute("cuestionario", cuestionario);
         }
 
@@ -36,6 +35,7 @@ public class CuestionarioController {
         model.put("opciones", primeraPregunta.getOpciones());
         model.put("tieneFoto", primeraPregunta.tieneFoto());
         model.put("foto", primeraPregunta.getFoto());
+        model.put("respuestaCorrecta", primeraPregunta.getRespuestaCorrecta());
         model.put("preguntaActual", cuestionario.getPreguntaActual() + 1);
         model.put("cantidadPreguntas", cuestionario.cantidadPreguntas());
         ctx.render("/pregunta.hbs", model);
@@ -61,6 +61,7 @@ public class CuestionarioController {
             model.put("opciones", siguientePregunta.getOpciones());
             model.put("tieneFoto", siguientePregunta.tieneFoto());
             model.put("foto", siguientePregunta.getFoto());
+            model.put("respuestaCorrecta", siguientePregunta.getRespuestaCorrecta());
             model.put("completo", cuestionario.esUltimaPregunta());
             model.put("preguntaActual", cuestionario.getPreguntaActual() + 1);
             model.put("cantidadPreguntas", cuestionario.cantidadPreguntas());

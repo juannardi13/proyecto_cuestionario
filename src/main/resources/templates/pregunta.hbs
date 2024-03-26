@@ -14,19 +14,21 @@
         {{/if}}
         <br>
         <h3>{{preguntaActual}} / {{cantidadPreguntas}}</h3>
-        <form action="/responder" method="POST">
+        <form id="form-responder" action="/responder" method="POST" data-indice-respuesta={{ respuestaCorrecta }}>
             {{#each opciones}}
-                <input type="radio" id="opcion{{ @index }}" name="indice" value="{{ @index }}">
+                <input type="radio" id="opcion{{ @index }}" name="indice" value="{{ @index }}" {{#if (eq @index indiceRespuestaCorrecta)}}checked{{/if}}>
                 <label for="opcion{{ @index }}">{{ this }}</label><br>
             {{/each}}
 
             {{#if completo}}
-                <input type="submit" value="Responder y terminar">
+                <input id="btn-responder" type="submit" value="Responder y terminar">
             {{else}}
-                <input type="submit" value="Responder">
+                <input id="btn-responder" type="submit" value="Responder" disabled>
             {{/if}}
 
         </form>
 
+        <script src="../jss/main.js"></script>
     </body>
+
 </html>
