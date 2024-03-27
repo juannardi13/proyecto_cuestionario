@@ -17,7 +17,7 @@ public class CuestionarioController {
 
         if (cuestionario == null) {
 
-          //  Collections.shuffle(preguntas);
+            Collections.shuffle(preguntas);
             List<Pregunta> seleccionadas = preguntas.subList(0, 40);
 
             cuestionario = new Cuestionario(seleccionadas);
