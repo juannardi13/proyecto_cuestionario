@@ -1,4 +1,4 @@
-<h1>proyecto_cuestionario</h1>
+## <h1 align="center"> 📋 proyecto_cuestionario 📋 </h1>
 
 En la maravillosa ciudad de La Matanza, dentro del conurbano bonaerense, para sacar el registro y poder cumplir uno de los deberes ciudadanos que adeudaba solicitan que se realice un examen teórico como en varias otras partes del país. Lo ¿grandioso? de este examen es que hay un simulador online al cual podes acceder con el número de documento, PERMITIÉNDOTE realizar simulacros del examen en sí. Para eso muestra cuarenta preguntas una por una y vas contestando, al finalizar te dice si aprobaste o no.
 PEEeEEEro, no podía ser todo color de rosas, ya que solo se permite realizar 5 (cinco) intentos al día, acotando la posibilidad de dedicarle grandes sesiones a contestar las preguntas. Por eso, como estaba de vacaciones y no tenía nada que hacer, decidí "explorar" un poco y desarrollar mi propio simulador, debido a que las preguntas que están en el mismo se encuentran fácilmente vía web.
