@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b58678d-f9cb-473d-bae8-4ac498e049d0" name="Changes" comment="Agrego las fotos de las preguntas que tienen. Falta: agregar Javascript, marcar las opciones correctas de las preguntas y hacer que se seleccionen al azar">
+    <list default="true" id="6b58678d-f9cb-473d-bae8-4ac498e049d0" name="Changes" comment="Ya está todo, solo falta ponerle las opciones correctas a las preguntas y un poco más lindas las vistas usando css o algo (opcional)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/CuestionarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/CuestionarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/jss/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/jss/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pregunta.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pregunta.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/resultado.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/resultado.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/repositories/RepositorioPreguntas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/repositories/RepositorioPreguntas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711424256696</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Ya está todo, solo falta ponerle las opciones correctas a las preguntas y un poco más lindas las vistas usando css o algo (opcional)">
+      <created>1711481080133</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1711481080133</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,6 +201,7 @@
     <MESSAGE value="Agrego algunas preguntas." />
     <MESSAGE value="Agrego todas las preguntas, falta Javascript seleccionar preguntas al azar" />
     <MESSAGE value="Agrego las fotos de las preguntas que tienen. Falta: agregar Javascript, marcar las opciones correctas de las preguntas y hacer que se seleccionen al azar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agrego las fotos de las preguntas que tienen. Falta: agregar Javascript, marcar las opciones correctas de las preguntas y hacer que se seleccionen al azar" />
+    <MESSAGE value="Ya está todo, solo falta ponerle las opciones correctas a las preguntas y un poco más lindas las vistas usando css o algo (opcional)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ya está todo, solo falta ponerle las opciones correctas a las preguntas y un poco más lindas las vistas usando css o algo (opcional)" />
   </component>
 </project>

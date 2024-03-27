@@ -13,13 +13,11 @@ public class CuestionarioController {
         List<Pregunta> preguntas = new ArrayList<>();
         preguntas = new RepositorioPreguntas().buscarTodos();
 
-        //TODO seleccionar las preguntas al azar
-
         Cuestionario cuestionario = ctx.sessionAttribute("cuestionario");
 
         if (cuestionario == null) {
 
-            Collections.shuffle(preguntas);
+          //  Collections.shuffle(preguntas);
             List<Pregunta> seleccionadas = preguntas.subList(0, 40);
 
             cuestionario = new Cuestionario(seleccionadas);
@@ -51,11 +49,9 @@ public class CuestionarioController {
 
         cuestionario.avanzarProximaPregunta();
 
-        // Obtener la siguiente pregunta del cuestionario
         if(!cuestionario.estaCompleto()) {
             Pregunta siguientePregunta = cuestionario.obtenerPregunta(cuestionario.getPreguntaActual());
 
-            // Renderizar la vista Handlebars con los datos de la siguiente pregunta
             Map<String, Object> model = new HashMap<>();
             model.put("pregunta", siguientePregunta.getPregunta());
             model.put("opciones", siguientePregunta.getOpciones());
